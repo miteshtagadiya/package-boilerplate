@@ -1,46 +1,16 @@
+# react-package-boilerplate
+
+Change following details in package.json
+
 ```
 {
-  "name": "boilerplate",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react-scripts": "1.1.4"
-  },
-  "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "transpile": "babel src -d dist --copy-files",
-    "prepublishOnly": "npm run transpile",
-    "build": "webpack --mode production",
-    "deploy": "gh-pages -d examples/dist",
-    "publish-demo": "npm run build && npm run deploy"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "name": "package name",
+  "version": "package version",
+  "description": "Package description",
   "main": "dist/index.js",
-  "peerDependencies": {
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.11",
-    "gh-pages": "^1.2.0",
-    "html-webpack-plugin": "^3.2.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.15.0",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miteshtagadiya/package-boilerplate.git"
+    "url": "git+https://github.com/miteshtagadiya/package-boilerplate.git"//your package git url
   },
   "keywords": [
     "boilerplate",
@@ -48,20 +18,23 @@
     "for",
     "package"
   ],
-  "author": "Mitesh Tagadiya",
-  "license": "MIT",
+  "author": "Author name",
+  "license": "Licence",//MIT or ISC etc.
   "bugs": {
-    "url": "https://github.com/miteshtagadiya/package-boilerplate/issues"
+    "url": "https://github.com/miteshtagadiya/package-boilerplate/issues" //Your package git issue url
   },
-  "homepage": "https://github.com/miteshtagadiya/package-boilerplate#readme"
+  "homepage": "https://github.com/miteshtagadiya/package-boilerplate#readme" //Your package git url
 }
 
 ```
+
 
 ```jsx
 npm install
 
 npm run transpile
+
+npm i gh-pages -D // creates github pages for demo
 
 npm run build
 
