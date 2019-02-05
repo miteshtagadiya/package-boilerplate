@@ -32,6 +32,8 @@ Change following details in package.json
 ```jsx
 npm install
 
+npm login
+
 npm run transpile
 
 npm i gh-pages -D // creates github pages for demo
